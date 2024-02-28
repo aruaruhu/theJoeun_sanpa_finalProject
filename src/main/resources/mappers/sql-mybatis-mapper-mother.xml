@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="MotherDAO_mybatis">
+
+    <resultMap id="helperResult" type="HelperVO">
+
+        <id property="helper_id" column="helper_id"/>
+        <result property="helper_password" column="helper_password"/>
+        <result property="helper_name" column="helper_name"/>
+        <result property="helper_email" column="helper_email"/>
+        <result property="helper_tel" column="helper_tel"/>
+        <result property="helper_address" column="helper_address"/>
+        <result property="helper_address_detail" column="helper_address_detail"/>
+        <result property="helper_birth" column="helper_birth"/>
+        <result property="helper_alaram" column="helper_alaram"/>
+        <result property="helper_location" column="helper_location"/>
+        <result property="helper_info" column="helper_info"/>
+        <result property="helper_status" column="helper_status"/>
+
+    </resultMap>
+
+    <resultMap id="motherResult" type="MotherVO">
+
+        <id property="mother_id" column="mother_id"/>
+        <result property="mother_babyName" column="mother_babyName"/>
+        <result property="mother_due_date" column="mother_due_date"/>
+        <result property="mother_d_day" column="mother_d_day"/>
+        <result property="mother_info" column="mother_info"/>
+        <result property="mother_emergency_alaram" column="mother_emergency_alaram"/>
+
+    </resultMap>
+
+
+
+
+
+</mapper>
